@@ -18,9 +18,10 @@ Inside of your project, you'll see the following folders and files:
 ```text
 /
 ├── app/
-│   ├── (drawer)/
+│   ├── (tabs)/
 │   │   └── _layout_.tsx
 │   │   └── index.tsx
+│   │   └── two.tsx
 │   ├── _layout.tsx
 │   └── +html.tsx
 │   └── +not-found.tsx

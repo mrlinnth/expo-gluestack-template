@@ -11,7 +11,7 @@ import { VStack } from '@/components/ui/vstack';
 export default function Home() {
   return (
     <>
-      <Stack.Screen options={{ title: 'Home' }} />
+      <Stack.Screen options={{ title: 'Tab One' }} />
       <Container>
         <Box className="h-80 justify-center">
           <VStack space="md" reversed={false}>
@@ -25,8 +25,7 @@ export default function Home() {
             </Button>
           </VStack>
         </Box>
-
-        <ScreenContent path="app/(drawer)/index.tsx" title="Home" />
+        <ScreenContent path="app/(tabs)/index.tsx" title="Tab One" />
       </Container>
     </>
   );

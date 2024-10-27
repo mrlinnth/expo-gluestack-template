@@ -1,5 +1,3 @@
-import '../global.css';
-
 import '@/global.css';
 
 import { Stack } from 'expo-router';
@@ -9,7 +7,7 @@ import { GluestackUIProvider } from '@/components/ui/gluestack-ui-provider';
 
 export const unstable_settings = {
   // Ensure that reloading on `/modal` keeps a back button present.
-  initialRouteName: '(drawer)',
+  initialRouteName: '(tabs)',
 };
 
 export default function RootLayout() {
@@ -17,7 +15,7 @@ export default function RootLayout() {
     <GluestackUIProvider mode="light">
       <GestureHandlerRootView style={{ flex: 1 }}>
         <Stack>
-          <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="modal" options={{ title: 'Modal', presentation: 'modal' }} />
         </Stack>
       </GestureHandlerRootView>
